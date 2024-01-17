@@ -1,0 +1,17 @@
+.inventory-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 12px;
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+  }
+}

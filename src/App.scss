@@ -1,0 +1,27 @@
+.app-container {
+  height: 100%;
+  padding: 20px;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+  }
+
+  .total {
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px;
+
+    .content {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use 'sass:color';
+
+.button {
+  color: #646cff;
+  background-color: rgba(100, 108, 255, 0.1);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px 13px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(100, 108, 255, 0.3);
+  }
+
+  &.outlined {
+    color: #24b253;
+    background-color: #fff;
+    border: 1px solid #24b253;
+
+    &:hover {
+      color: darken(#24b253, 10%);
+      border: 1px solid darken(#24b253, 10%);
+      background-color: rgba(36, 178, 83, 0.1);
+    }
+  }
+
+  &.danger {
+    color: #e52525;
+    background-color: rgba(229, 37, 37, 0.1);
+
+    &:hover {
+      background-color: rgba(229, 37, 37, 0.3);
+    }
+
+    &:disabled {
+      background-color: rgba(182, 116, 116, 0.04);
+      color: #cccccc;
+    }
+  }
+
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.04);
+    color: #cccccc;
+  }
+}
